@@ -1,0 +1,27 @@
+services:
+  web:
+    build: 
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - "80:8000"
+    depends_on:
+      - db
+    environment:
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=password
+      - MYSQL_SERVICE_HOST=127.0.0.1
+      - MYSQL_SERVICE_PORT=3306
+      - MYSQL_DATABASE=keebie
+      - REACT_APP_BASE_URL=http://localhost:80
+  db:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: mydatabase
+    volumes:
+      - db_data:/var/lib/mysql
+    ports:
+      - "3306:3306"
+volumes:
+  db_data:
