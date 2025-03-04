@@ -1,8 +1,4 @@
-import axios from "axios";
-
-const api = axios.create({
-	baseURL: process.env.REACT_APP_BASE_URL,
-});
+import api from "./api";
 
 const headers = {
 	"Content-Type": "application/x-www-form-urlencoded",
