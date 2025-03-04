@@ -1,0 +1,37 @@
+# k8s/backend.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: keebie-backend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: keebie-backend
+  template:
+    metadata:
+      labels:
+        app: keebie-backend
+    spec:
+      containers:
+      - name: backend
+        image: tedomi2705/keebie-backend:latest
+        ports:
+        - containerPort: 8000
+        envFrom:
+        - configMapRef:
+            name: keebie-config
+        - secretRef:
+            name: keebie-secrets
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: keebie-backend
+spec:
+  ports:
+  - port: 8000
+    targetPort: 8000
+  selector:
+    app: keebie-backend

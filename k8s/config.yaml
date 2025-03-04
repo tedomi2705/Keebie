@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: keebie-config
+data:
+  MYSQL_SERVICE_HOST: keebie-db
+  MYSQL_SERVICE_PORT: "3306"
+  MYSQL_DATABASE: keebie
+
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: keebie-secrets
+type: Opaque
+stringData:
+  MYSQL_USER: tedomi
+  MYSQL_PASSWORD: Tedomi2705@
+  MYSQL_ROOT_PASSWORD: ROOT2705@

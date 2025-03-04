@@ -1,0 +1,65 @@
+# k8s/db.yaml
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: keebie-db
+spec:
+  serviceName: keebie-db
+  replicas: 1
+  selector:
+    matchLabels:
+      app: keebie-db
+  template:
+    metadata:
+      labels:
+        app: keebie-db
+    spec:
+      containers:
+      - name: mysql
+        image: mysql:8.0
+        env:
+        - name: MYSQL_DATABASE
+          valueFrom:
+            configMapKeyRef:
+              name: keebie-config
+              key: MYSQL_DATABASE
+        - name: MYSQL_USER
+          valueFrom:
+            secretKeyRef:
+              name: keebie-secrets
+              key: MYSQL_USER
+        - name: MYSQL_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: keebie-secrets
+              key: MYSQL_PASSWORD
+        - name: MYSQL_ROOT_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: keebie-secrets
+              key: MYSQL_ROOT_PASSWORD
+        ports:
+        - containerPort: 3306
+        volumeMounts:
+        - name: mysql-data
+          mountPath: /var/lib/mysql
+  volumeClaimTemplates:
+  - metadata:
+      name: mysql-data
+    spec:
+      accessModes: [ "ReadWriteOnce" ]
+      resources:
+        requests:
+          storage: 1Gi
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: keebie-db
+spec:
+  ports:
+  - port: 3306
+    targetPort: 3306
+  selector:
+    app: keebie-db
