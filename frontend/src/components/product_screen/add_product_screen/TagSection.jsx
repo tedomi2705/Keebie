@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Select } from "antd";
 import { toast } from "react-toastify";
 import { getAllCategoriesAPI } from "../../../services/AdminServices";

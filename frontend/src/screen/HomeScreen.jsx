@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import Carousel from "../components/home_screen/Carousel";
 import HotSection from "../components/home_screen/HotSection";
 import GroupBuySection from "../components/home_screen/GroupBuySection";

@@ -1,4 +1,3 @@
-import React from "react";
 import LoginForm from "../shared/formComponent/LoginForm";
 
 export default function LoginScreen() {

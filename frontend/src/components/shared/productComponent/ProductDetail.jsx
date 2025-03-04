@@ -1,4 +1,3 @@
-import React, { useRef } from "react";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { Carousel, Breadcrumb, Tag, ConfigProvider } from "antd";
@@ -8,7 +7,6 @@ import { toast } from "react-toastify";
 import { getProductByIdAPI } from "../../../services/SystemServices";
 import { getProductImgByIdAPI } from "../../../services/SystemServices";
 import useCartStore from "../../../stores/CartStore";
-import useCategoryStore from "../../../stores/CategoryStore";
 import { getAllCategoriesAPI } from "../../../services/AdminServices";
 
 export default function ProductDetailScreen() {

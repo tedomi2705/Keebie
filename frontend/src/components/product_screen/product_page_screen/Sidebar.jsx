@@ -1,4 +1,3 @@
-import React from "react";
 import { MenuOutlined } from "@ant-design/icons";
 import CategoryFilter from "./CategoryFilter";
 import PriceFilter from "./PriceFilter";

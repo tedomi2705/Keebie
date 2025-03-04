@@ -1,7 +1,7 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { useState } from "react";
 import { ConfigProvider } from "antd";
-import { Radio, Space, Input } from "antd";
+import { Radio, Space } from "antd";
 import useCategoryStore from "../../../stores/CategoryStore";
 import useProdOnDisplayStore from "../../../stores/ProdOnDisplay";
 

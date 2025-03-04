@@ -1,4 +1,3 @@
-import React from "react";
 import SignUpForm from "../shared/formComponent/SignUpForm";
 
 const inputStyle =

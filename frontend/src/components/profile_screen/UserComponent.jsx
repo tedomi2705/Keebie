@@ -1,8 +1,7 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import { useState } from "react";
 import { ConfigProvider, Modal, Input } from "antd";
 import { toast } from "react-toastify";
-import useCurrUserStore from "../../stores/CurrUserStore";
 import { useImmer } from "use-immer";
 import { changePasswordAPI } from "../../services/UserServices";
 

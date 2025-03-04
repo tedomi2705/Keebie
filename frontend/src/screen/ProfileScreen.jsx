@@ -1,6 +1,5 @@
-import React from "react";
 import { useState } from "react";
-import { UserOutlined, BarsOutlined, HomeOutlined } from "@ant-design/icons";
+import { UserOutlined, BarsOutlined } from "@ant-design/icons";
 import { Layout, Menu, ConfigProvider } from "antd";
 import UserComponent from "../components/profile_screen/UserComponent";
 import HistoryComponent from "../components/profile_screen/HistoryComponent";

@@ -1,5 +1,5 @@
-import React, { useEffect, useRef, useState } from "react";
-import { ConfigProvider, Table, Modal, Input, Select } from "antd";
+import { useEffect, useRef, useState } from "react";
+import { ConfigProvider, Table, Modal, Select } from "antd";
 import { EditOutlined } from "@ant-design/icons";
 import {
 	getAllOrderAPi,

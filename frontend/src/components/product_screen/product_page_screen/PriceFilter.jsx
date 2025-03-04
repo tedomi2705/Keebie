@@ -1,7 +1,6 @@
-import React from "react";
 import { useState } from "react";
 import { ConfigProvider } from "antd";
-import { Radio, Space, Input } from "antd";
+import { Radio, Space } from "antd";
 import useProdOnDisplayStore from "../../../stores/ProdOnDisplay";
 
 export default function PriceFilter() {

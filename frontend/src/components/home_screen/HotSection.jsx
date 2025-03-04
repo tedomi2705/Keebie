@@ -1,4 +1,3 @@
-import React from "react";
 import ProductRow from "../shared/productComponent/ProductRow";
 
 export default function HotSection() {

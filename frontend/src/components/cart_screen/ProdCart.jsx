@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { InputNumber } from "antd";
 import { ConfigProvider } from "antd";
 import useCartStore from "../../stores/CartStore";

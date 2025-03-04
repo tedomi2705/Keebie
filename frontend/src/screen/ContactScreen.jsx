@@ -1,4 +1,3 @@
-import React from "react";
 import { Form, Input, ConfigProvider } from "antd";
 import { Breadcrumb } from "antd";
 
@@ -11,7 +10,7 @@ const layout = {
 	},
 };
 
-/* eslint-disable no-template-curly-in-string */
+ 
 const validateMessages = {
 	required: "Thông tin chưa được cung cấp",
 	types: {
@@ -20,7 +19,7 @@ const validateMessages = {
 	},
 };
 
-/* eslint-enable no-template-curly-in-string */
+ 
 const onFinish = (values) => {};
 
 const onSubmit = (data) => {};

@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import { useEffect, useState } from "react";
 import { ConfigProvider, Table } from "antd";
 import { getOrdersByCustomerAPI } from "../../services/UserServices";

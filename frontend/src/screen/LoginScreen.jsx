@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import LoginComponent from "../components/login_screen/LoginComponent";
 import { useHistory } from "react-router-dom";
 

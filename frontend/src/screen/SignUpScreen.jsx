@@ -1,4 +1,3 @@
-import React from "react";
 import SignUpComponent from "../components/signup_screen/SignUpComponent";
 
 export default function SignUpScreen() {

@@ -1,7 +1,4 @@
-import React, { useState } from "react";
 import ProdImage from "./ProdImage";
-import { createProdImageAPI } from "../../../services/AdminServices";
-import { useImmer } from "use-immer";
 import { toast } from "react-toastify";
 
 const lableStyle =

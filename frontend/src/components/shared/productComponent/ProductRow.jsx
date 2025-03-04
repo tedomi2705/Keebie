@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import ProdCard from "./ProdCard";
 import useProdOnDisplayStore from "../../../stores/ProdOnDisplay";
 import useCategoryStore from "../../../stores/CategoryStore";

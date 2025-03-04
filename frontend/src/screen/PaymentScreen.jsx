@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import { useState, useEffect } from "react";
 import { ConfigProvider } from "antd";
 import { Form, Input, Radio, Space } from "antd";
@@ -96,8 +96,7 @@ export default function PaymentScreen() {
 						cartItems.current[i].id,
 						cartItems.current[i].quantity
 					);
-					if (response.status === 200) {
-					} else {
+					if (response.status !== 200) {
 						flag = false;
 					}
 				}

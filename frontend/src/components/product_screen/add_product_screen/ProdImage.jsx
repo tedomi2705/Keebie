@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import MyButton from "../../shared/MyButton";
 
 export default function ProdImage({ src, alt, handleDeleteImage }) {

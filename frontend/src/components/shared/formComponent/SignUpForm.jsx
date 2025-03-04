@@ -1,6 +1,5 @@
-import React from "react";
 import { Input } from "./Input";
-import { FormProvider, set, useForm } from "react-hook-form";
+import { FormProvider, useForm } from "react-hook-form";
 import {
 	fullNameValidation,
 	emailValidation,
@@ -169,8 +168,8 @@ export default function SignUpForm() {
 				<Input {...userNameValidation} />
 				<Input {...passwordValidation} />
 				<Input {...confirmPasswordValidation} />
-				<div classname="grid grid-cols-2 gap-4">
-					<div classname="col-span-1">
+				<div className="grid grid-cols-2 gap-4">
+					<div className="col-span-1">
 						<Input {...verify_codeValidation} />
 					</div>
 				</div>

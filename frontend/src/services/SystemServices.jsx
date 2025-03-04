@@ -1,9 +1,5 @@
 import api from "./api";
 
-const headers = {
-	"Content-Type": "application/x-www-form-urlencoded",
-};
-
 export const getAllProductsAPI = async () => {
 	try {
 		const res = await api.get("/products");

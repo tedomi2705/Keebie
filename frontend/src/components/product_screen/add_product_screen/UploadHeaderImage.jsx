@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import ProdImage from "./ProdImage";
 import { toast } from "react-toastify";
 
@@ -40,7 +39,7 @@ export default function UploadHeaderImage({
 			<a
 				href="https://compressnow.com/"
 				target="_blank"
-				className="text-blue underline"
+				className="text-blue underline" rel="noreferrer"
 			>
 				Nén ảnh tại đây
 			</a>

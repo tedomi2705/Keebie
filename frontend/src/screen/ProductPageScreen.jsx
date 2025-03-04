@@ -1,4 +1,3 @@
-import React from "react";
 import { Breadcrumb, Layout } from "antd";
 import Sidebar from "../components/product_screen/product_page_screen/Sidebar";
 import SortingFilter from "../components/product_screen/product_page_screen/SortingFilter";
