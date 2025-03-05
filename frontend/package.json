@@ -29,7 +29,7 @@
 		"@eslint/js": "^9.21.0",
 		"@typescript-eslint/eslint-plugin": "^8.26.0",
 		"@typescript-eslint/parser": "^8.26.0",
-		"@vitejs/plugin-react": "^4.2.0",
+		"@vitejs/plugin-react-swc": "^3.8.0",
 		"autoprefixer": "^10.4.16",
 		"eslint": "^9.21.0",
 		"eslint-plugin-import": "^2.31.0",
@@ -46,6 +46,7 @@
 	"pnpm": {
 		"onlyBuiltDependencies": [
 			"@parcel/watcher",
+			"@swc/core",
 			"esbuild"
 		]
 	}
